@@ -1,7 +1,7 @@
 import pymysql
 import time
 
-myConnection = pymysql.connect(host = 'localhost', user = 'admin', passwd = 'LocalSQL1123!', db = 'shakespeare')
+myConnection = pymysql.connect(db = 'shakespeare')
 cur = myConnection.cursor()
 
 with open('characters.txt', 'r') as char:
